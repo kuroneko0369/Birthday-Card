@@ -7,6 +7,7 @@ body {
   background-image:url("assets/bg.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
+  flex-direction: column;
 }
 
 .overlay {
@@ -16,6 +17,20 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+
+.overlay:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.overlay .thumb img{
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 
 .hero{
@@ -23,6 +38,7 @@ body {
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 0;
 }
 
 .hero button{
@@ -44,4 +60,3 @@ body {
   font-size: 1.5rem;
   margin: 10px 0;
 }
-
