@@ -41,6 +41,6 @@ function resetInterval() {
   slideInterval = setInterval(autoSlide, 3000);
 }
 
-/* Pause auto-slide saat user sentuh */
+/* pause auto-slide (harusnya awoakwok) */
 slider.addEventListener("touchstart", () => clearInterval(slideInterval));
 slider.addEventListener("touchend", resetInterval);
